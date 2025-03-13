@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Open Cart UI Automation Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="siteURL" value="https://opensource-demo.orangehrmlive.com/"/>
+  <listeners>
+    <listener class-name="com.opencart.util.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Open Cart - Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.opencart.tests.PimTestPage">
+        <methods>
+          <include name="PimEployyee"/>
+          <include name="AdminUserCreation"/>
+          <include name="initTestData"/>
+        </methods>
+      </class> <!-- com.opencart.tests.PimTestPage -->
+    </classes>
+  </test> <!-- Open Cart - Chrome(failed) -->
+  <test thread-count="2" parallel="tests" name="Open Cart - Firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.opencart.tests.CartRegistrationTestPage">
+        <methods>
+          <include name="initOpenCartRegister"/>
+          <include name="verifregister"/>
+          <include name="initTestData"/>
+        </methods>
+      </class> <!-- com.opencart.tests.CartRegistrationTestPage -->
+    </classes>
+  </test> <!-- Open Cart - Firefox(failed) -->
+</suite> <!-- Failed suite [Open Cart UI Automation Suite] -->

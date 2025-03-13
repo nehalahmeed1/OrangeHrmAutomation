@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DCF UI Automation]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" parallel="methods" name="Open Craft2(failed)">
+    <parameter name="siteURL" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="com.opencart.tests.CartRegistrationTestPage">
+        <methods>
+          <include name="initOpenCartRegister"/>
+          <include name="verifregister"/>
+        </methods>
+      </class> <!-- com.opencart.tests.CartRegistrationTestPage -->
+    </classes>
+  </test> <!-- Open Craft2(failed) -->
+</suite> <!-- Failed suite [DCF UI Automation] -->

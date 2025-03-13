@@ -1,0 +1,1 @@
+{"uuid":"a1766a2a-bece-48d5-92c2-ee6795155fff","name":"Open Cart Ui Aumtomation","children":["64a4e29b-2f92-45cc-a21a-2a3d0a3210fa"],"befores":[{"name":"initTestData","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1716886075494,"stop":1716886075506}],"afters":[],"start":1716886075424,"stop":1716886176966}
